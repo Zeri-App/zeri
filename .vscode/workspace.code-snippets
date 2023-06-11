@@ -1,0 +1,57 @@
+{
+  // Place your zeri-app workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Pinia Options Store Boilerplate": {
+    "scope": "javascript,typescript",
+    "prefix": "pinia-options",
+    "body": [
+      "import { defineStore, acceptHMRUpdate } from 'pinia'",
+      "",
+      "export const use${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Store = defineStore('$TM_FILENAME_BASE', {",
+      " state: () => ({",
+      "   $0",
+      " }),",
+      " getters: {},",
+      " actions: {},",
+      "})",
+      "",
+      "if (import.meta.hot) {",
+      " import.meta.hot.accept(acceptHMRUpdate(use${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Store, import.meta.hot))",
+      "}",
+      ""
+    ],
+    "description": "Bootstrap the code needed for a Vue.js Pinia Options Store file"
+  },
+  "Pinia Setup Store Boilerplate": {
+    "scope": "javascript,typescript",
+    "prefix": "pinia-setup",
+    "body": [
+      "import { defineStore, acceptHMRUpdate } from 'pinia'",
+      "",
+      "export const use${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Store = defineStore('$TM_FILENAME_BASE', () => {",
+      " $0",
+      " return {}",
+      "})",
+      "",
+      "if (import.meta.hot) {",
+      " import.meta.hot.accept(acceptHMRUpdate(use${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Store, import.meta.hot))",
+      "}",
+      ""
+    ],
+    "description": "Bootstrap the code needed for a Vue.js Pinia Setup Store file"
+  }
+}

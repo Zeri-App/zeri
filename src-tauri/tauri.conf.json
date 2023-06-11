@@ -8,11 +8,39 @@
   },
   "package": {
     "productName": "Zeri",
-    "version": "0.1.0"
+    "version": "0.0.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": false,
+      "dialog": {
+        "all": false,
+        "ask": true,
+        "confirm": false,
+        "message": true,
+        "open": true,
+        "save": false
+      },
+      "fs": {
+        "all": false,
+        "copyFile": false,
+        "createDir": false,
+        "exists": false,
+        "readDir": true,
+        "readFile": false,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": [],
+        "writeFile": false
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": ["/**/*"]
+      },
+      "window": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -29,7 +57,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.artcabrera.zeri",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -59,7 +87,11 @@
         "height": 600,
         "resizable": true,
         "title": "Zeri",
-        "width": 800
+        "width": 800,
+        "decorations": false,
+        "hiddenTitle": true,
+        "transparent": true,
+        "center": true
       }
     ]
   }
