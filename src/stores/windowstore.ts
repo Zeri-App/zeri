@@ -22,8 +22,10 @@ export const useWindowStore = defineStore('window', () => {
   };
 
   return {
+    maximized: readonly(maximized),
     isMaximized,
     setMaximized,
+    focused: readonly(focused),
     isFocused,
     setFocused
   };

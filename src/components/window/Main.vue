@@ -15,6 +15,7 @@ import type { Option } from '@/types';
 import { batchFn } from '@/utils/batchfn';
 import { useRouterStore } from "@/stores/routerstore"
 import { useWindowStore } from '@/stores/windowstore';
+import { useWindowEvent } from '@/composables/useWindowEvent';
 
 const router = useRouterStore();
 const window = useWindowStore();
@@ -50,6 +51,10 @@ watch(
 useTauriEvent(TauriEvent.WINDOW_RESIZED, updateWindowMaximized);
 useTauriEvent(TauriEvent.WINDOW_FOCUS, () => updateWindowFocused(true));
 useTauriEvent(TauriEvent.WINDOW_BLUR, () => updateWindowFocused(false));
+
+useWindowEvent("keydown", (event: KeyboardEvent) => {
+    if (event.key === 'Tab') event.preventDefault();
+})
 
 onMounted(updateWindowMaximized);
 onMounted(focusScrollView);
