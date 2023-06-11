@@ -13,9 +13,11 @@ import AppBar from '@/components/window/AppBar.vue';
 import { useTauriEvent } from '@/composables/useTauriEvent';
 import type { Option } from '@/types';
 import { batchFn } from '@/utils/batchfn';
-import { useNavStore } from '@/stores/navstore';
+import { useRouterStore } from "@/stores/routerstore"
+import { useWindowStore } from '@/stores/windowstore';
 
-const navStore = useNavStore();
+const router = useRouterStore();
+const window = useWindowStore();
 
 const windowMaximized = ref<boolean>(false);
 const scrollView = ref<Option<OverlayScrollbarsComponentRef>>(null);
@@ -24,15 +26,20 @@ const options = <PartialOptions>{ scrollbars: { autoHide: 'scroll', theme: 'os-t
 
 const updateWindowMaximized = async () => {
     windowMaximized.value = await appWindow.isMaximized();
+    window.setMaximized(windowMaximized.value);
 };
+
+const updateWindowFocused = (value: boolean) => {
+    window.setFocused(value);
+}
 
 const focusScrollView = batchFn(() => {
     scrollView?.value?.getElement()?.focus();
 });
 
-watch(() => navStore.current, focusScrollView, { flush: 'post' });
+watch(() => router.current, focusScrollView, { flush: 'post' });
 watch(
-    () => navStore.current,
+    () => router.current,
     () => {
         const element = scrollView?.value?.osInstance()?.elements().scrollOffsetElement;
         if (element) element.scrollTop = 0;
@@ -41,33 +48,29 @@ watch(
 );
 
 useTauriEvent(TauriEvent.WINDOW_RESIZED, updateWindowMaximized);
+useTauriEvent(TauriEvent.WINDOW_FOCUS, () => updateWindowFocused(true));
+useTauriEvent(TauriEvent.WINDOW_BLUR, () => updateWindowFocused(false));
 
 onMounted(updateWindowMaximized);
 onMounted(focusScrollView);
 </script>
 
 <template>
-    <main v-bind:class="{
-        'w-screen bg-slate-900/75 h-screen overflow-hidden overscroll-none flex': true,
+    <main :class="{
+        'flex h-screen w-screen overflow-hidden overscroll-none bg-slate-900/75': true,
         'rounded-md': !windowMaximized
     }">
-        <div class="w-96 h-full border-r border-slate-200/50">
-            <SideBar />
-        </div>
-        <div class="w-full h-full flex flex-col">
-            <div class="w-full h-12">
+        <SideBar />
+        <div class="relative flex h-full w-full flex-col">
+            <div class="h-12 w-full">
                 <AppBar />
             </div>
-            <div class="w-full h-[calc(100%_-_3rem)]">
-                <ScrollView element="div" defer :options="options" tabindex="-1" class="w-full h-full">
+            <div class="h-[calc(100%_-_3rem)] w-full">
+                <ScrollView element="div" defer :options="options" tabindex="-1" class="h-full w-full">
                     <slot />
                 </ScrollView>
             </div>
-        </div>
-    </main>
-</template>
-
-            </div>
+            <div class="absolute bottom-0 right-0 h-20 w-full"></div>
         </div>
     </main>
 </template>

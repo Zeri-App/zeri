@@ -7,5 +7,6 @@
   "bracketSameLine": true,
   "trailingComma": "none",
   "useTabs": false,
-  "vueIndentScriptAndStyle": true
+  "vueIndentScriptAndStyle": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
