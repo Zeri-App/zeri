@@ -2,6 +2,11 @@
   "name": "zeri",
   "version": "0.0.0",
   "private": true,
+  "license": "The Unlicense",
+  "repository": {
+    "url": "https://github.com/Zeri-App/zeri"
+  },
+  "description": "An offline first, free, and open-source desktop music player. Made with Tauri, Vite, Vue, and TailwindCSS",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -11,6 +16,12 @@
     "test:unit": "vitest",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write ."
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.3.0",
+    "dexie": "^3.2.4",
+    "overlayscrollbars": "^2.2.0",
+    "overlayscrollbars-svelte": "^0.4.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.0",
@@ -34,11 +45,5 @@
     "vite": "^4.3.9",
     "vitest": "^0.32.0"
   },
-  "type": "module",
-  "dependencies": {
-    "@tauri-apps/api": "^1.3.0",
-    "dexie": "^3.2.4",
-    "overlayscrollbars": "^2.2.0",
-    "overlayscrollbars-svelte": "^0.4.0"
-  }
+  "type": "module"
 }
