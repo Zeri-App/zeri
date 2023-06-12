@@ -44,7 +44,7 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
+      "category": "Music",
       "copyright": "",
       "deb": {
         "depends": []
@@ -57,8 +57,9 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.artcabrera.zeri",
-      "longDescription": "",
+      "identifier": "app.zeri",
+      "longDescription": "An offline first, free, and open-source desktop music player. Made with Tauri, Vite, Vue, and TailwindCSS",
+      "publisher": "Zeri",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -67,7 +68,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "Play music, even when you're offline.",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -83,15 +84,16 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "Zeri",
-        "width": 800,
+        "height": 640,
+        "width": 1080,
+        "minHeight": 640,
+        "minWidth": 1080,
+        "fullscreen": false,
+        "resizable": true,
         "decorations": false,
         "hiddenTitle": true,
-        "transparent": true,
-        "center": true
+        "transparent": true
       }
     ]
   }
