@@ -10,7 +10,7 @@ Play music, even when you're offline.
 
 - Zeri doesn't use your internet connection unless you want it to.
 
-- Zeri is built with `TypeScript`, `Vue`, `Tauri`, `Vite` and `TailwindCSS`.
+- Zeri is built with `TypeScript`, `Svelte`, `Tauri`, `Vite` and `TailwindCSS`.
 
 # Build your own Zeri app
 
@@ -26,17 +26,6 @@ If you want to build Zeri by yourself:
 
 If you want to contribute, feel free to clone this repository and open a pull request.
 
-## Recommended IDE Setup
+# License
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) + [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-Enable [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669):
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+See [LICENSE.md](/LICENSE.md)
