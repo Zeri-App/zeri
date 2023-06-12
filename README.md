@@ -2,7 +2,7 @@
   <img width="256px" height="256px" src="src-tauri/icons/128x128%402x.png" />
 </div>
 
-# Zeri (Beta)
+# Zeri (EARLY EARLY EARLY DEV)
 
 Play music, even when you're offline.
 

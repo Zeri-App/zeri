@@ -60,8 +60,11 @@ useWindowEvent("keydown", (event: KeyboardEvent) => {
   if (event.key === "Tab") event.preventDefault();
 });
 
-onMounted(updateWindowMaximized);
-onMounted(focusScrollView);
+onMounted(() => {
+  updateWindowMaximized();
+  focusScrollView();
+  updateWindowFocused(true);
+})
 </script>
 
 <template>
