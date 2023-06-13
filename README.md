@@ -30,7 +30,7 @@ If you want to build Zeri by yourself:
 
 # Contributing
 
-If you want to contribute, feel free to clone this repository and open a pull request.
+See [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 # License
 
