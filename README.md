@@ -2,6 +2,12 @@
   <img width="256px" height="256px" src="src-tauri/icons/128x128%402x.png" />
 </div>
 
+<br />
+
+<br />
+
+[![wakatime](https://wakatime.com/badge/user/41c7b3a0-cdec-4bfa-878d-91749cfc2273/project/91bddf2a-32af-4d2b-a863-6045470cb4a7.svg)](https://wakatime.com/badge/user/41c7b3a0-cdec-4bfa-878d-91749cfc2273/project/91bddf2a-32af-4d2b-a863-6045470cb4a7)
+
 # Zeri (Early Development)
 
 Play music, even when you're offline.
