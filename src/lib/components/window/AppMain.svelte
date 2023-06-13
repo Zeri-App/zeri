@@ -5,7 +5,7 @@
   import { OverlayScrollbarsComponent as ScrollView } from 'overlayscrollbars-svelte';
 
   import { useTauriEvent } from '@app/composables/useTauriEvent';
-  import { windowFocused, windowMaximized } from '@app/stores/windowstore';
+  import { windowFocused, windowMaximized } from '@app/stores/windowStore';
   import { useWindowEvent } from '@app/composables/useWindowEvent';
   import AppSideBar from '@app/components/window/AppSideBar.svelte';
   import AppBar from './AppBar.svelte';

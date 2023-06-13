@@ -17,7 +17,9 @@ const config = {
       '@app/composables': './src/lib/composables/',
       '@app/composables/*': './src/lib/composables/*',
       '@app/stores': './src/lib/stores',
-      '@app/stores/*': './src/lib/stores/*'
+      '@app/stores/*': './src/lib/stores/*',
+      '@app/utils': './src/lib/utils',
+      '@app/utils/*': './src/lib/utils/*'
     }
   }
 };

@@ -1,5 +1,5 @@
 import Dexie from 'dexie';
-import type { Album, Artist, Playlist, Track } from '@types';
+import type { Album, Artist, Playlist, Track } from '@app/types';
 
 class Database extends Dexie {
   tracks: Dexie.Table<Track, number>;

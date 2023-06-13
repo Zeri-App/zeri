@@ -1,7 +1,7 @@
 <script lang="ts">
   import { appWindow } from '@tauri-apps/api/window';
 
-  import { windowMaximized, windowFocused } from '@app/stores/windowstore';
+  import { windowMaximized, windowFocused } from '@app/stores/windowStore';
   import MinimizeIcon from '@app/components/icons/MinimizeIcon.svelte';
   import XIcon from '@app/components/icons/XIcon.svelte';
   import RestoreIcon from '@app/components/icons/RestoreIcon.svelte';
