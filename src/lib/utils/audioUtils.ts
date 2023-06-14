@@ -11,7 +11,10 @@ export const getMetadata = async (source: string) => {
 };
 
 export const getAudioFilesFromFolder = async (entries: FileEntry[]): Promise<Track[]> => {
-  return await invoke<Track[]>('get_audio_files_from_folder', { entries });
+  return await invoke<Track[]>('get_audio_files_from_folder', {
+    entries,
+    batchSize: 20
+  });
 };
 
 export const formatDuration = (duration: number): string => {

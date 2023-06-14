@@ -36,21 +36,27 @@ struct LyricsItem {
 }
 
 #[tauri::command]
-fn get_audio_files_from_folder(entries: Vec<FileEntry>) -> Vec<Track> {
+fn get_audio_files_from_folder(entries: Vec<FileEntry>, batch_size: usize) -> Vec<Track> {
     let mut tracks: Vec<Track> = Vec::new();
+    let mut batch: Vec<Track> = Vec::new();
 
     for entry in entries {
         if is_audio(&entry.path) {
             if let Some(metadata) = get_metadata(&entry.path) {
-                tracks.push(metadata);
+                batch.push(metadata);
             }
         }
 
         if let Some(children) = entry.children {
-            let child_tracks: Vec<Track> = get_audio_files_from_folder(children);
-            tracks.extend(child_tracks);
+            let child_tracks: Vec<Track> = get_audio_files_from_folder(children, batch_size);
+            batch.extend(child_tracks);
+        }
+
+        if batch.len() >= batch_size {
+            tracks.append(&mut batch);
         }
     }
+    tracks.append(&mut batch);
     tracks
 }
 
