@@ -43,3 +43,5 @@ export interface Playlist {
   name: string;
   tracks: number[];
 }
+
+export type Repeat = 'OFF' | 'ONE' | 'ALL';

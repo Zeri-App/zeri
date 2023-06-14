@@ -10,16 +10,8 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      '@app/types': './src/lib/types.ts',
-      '@app/constants': './src/lib/constants.ts',
-      '@app/components': './src/lib/components/',
-      '@app/components/*': './src/lib/components/*',
-      '@app/composables': './src/lib/composables/',
-      '@app/composables/*': './src/lib/composables/*',
-      '@app/stores': './src/lib/stores',
-      '@app/stores/*': './src/lib/stores/*',
-      '@app/utils': './src/lib/utils',
-      '@app/utils/*': './src/lib/utils/*'
+      '@app': './src/lib',
+      '@app/*': './src/lib/*'
     }
   }
 };

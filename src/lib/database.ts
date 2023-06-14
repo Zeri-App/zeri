@@ -75,6 +75,15 @@ class Database extends Dexie {
   getArtist = async (name: string): Promise<Artist | undefined> =>
     await this.artists.where('name').equals(name).first();
 
+  getPlaylistTracks = async (playlistId: number): Promise<Track[]> => {
+    const playlist = await this.playlists.get(playlistId);
+    if (playlist) {
+      const tracks = await this.tracks.where('id').anyOf(playlist.tracks).toArray();
+      return tracks;
+    }
+    return [];
+  };
+
   getAlbumTracks = async (albumId: number): Promise<Track[]> => {
     const album = await this.albums.get(albumId);
     if (album) {

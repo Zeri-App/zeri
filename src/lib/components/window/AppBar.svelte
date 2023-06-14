@@ -13,7 +13,7 @@
     await appWindow.toggleMaximize();
 </script>
 
-<div data-tauri-drag-region class="flex h-12 w-full flex-row-reverse px-2 fixed top-0 left-0">
+<div data-tauri-drag-region class="flex h-12 w-full flex-row-reverse px-2 absolute top-0 left-0">
   <div class="flex h-full w-[4.5rem] items-center justify-between">
     <div class="flex h-6 w-6 items-center justify-center">
       <button
