@@ -153,7 +153,8 @@
           <h3 class="line-clamp-2 text-slate-100">{$CURRENT_PLAYING_TRACK.title}</h3>
           <a
             href="/artists/{$CURRENT_PLAYING_TRACK.artist}"
-            class="line-clamp-1 text-slate-400 hover:underline">{$CURRENT_PLAYING_TRACK.artist}</a
+            class="line-clamp-1 w-fit text-slate-400 hover:underline"
+            >{$CURRENT_PLAYING_TRACK.artist}</a
           >
         </div>
       </div>
