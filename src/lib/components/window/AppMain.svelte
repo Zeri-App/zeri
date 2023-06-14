@@ -183,10 +183,10 @@
     'rounded-md'}"
 >
   <AppBar />
-  <div class="w-72 h-full">
+  <div class="w-64 h-full">
     <AppSideBar />
   </div>
-  <div class="flex h-full w-[calc(100%_-_18rem)] pt-[3rem] {$CURRENT_PLAYING_TRACK && 'pb-20'}">
+  <div class="flex h-full w-[calc(100%_-_16rem)] pt-[3rem] {$CURRENT_PLAYING_TRACK && 'pb-20'}">
     <ScrollView
       class="w-full h-full px-4"
       element="div"
@@ -195,7 +195,7 @@
       <slot />
     </ScrollView>
   </div>
-  <div class="absolute bottom-0 right-0 w-[calc(100%_-_18rem)] h-20">
+  <div class="absolute bottom-0 right-0 w-[calc(100%_-_16rem)] h-20">
     <AppPlayer />
   </div>
 </main>

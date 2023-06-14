@@ -1,4 +1,5 @@
 import type { LocalKeys } from '@app/constants';
+import type { SvelteComponent } from 'svelte';
 
 export type Option<T> = T | null;
 
@@ -45,3 +46,7 @@ export interface Playlist {
 }
 
 export type Repeat = 'OFF' | 'ONE' | 'ALL';
+
+export interface Page {
+  [key: string]: { name: string; icon: typeof SvelteComponent };
+}

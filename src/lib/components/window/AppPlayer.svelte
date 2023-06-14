@@ -179,7 +179,7 @@
         </div>
         <div class="h-fit w-1/5 flex justify-center">
           <button
-            class="focus:outline-none p-2 active:bg-slate-600 rounded-full bg-slate-400 flex items-center justify-center"
+            class="focus:outline-none p-1 active:bg-slate-600 rounded-full bg-slate-400 flex items-center justify-center"
             on:click={togglePlay}
           >
             {#if $PLAYER_PAUSED}

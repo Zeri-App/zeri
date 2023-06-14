@@ -1,3 +1,5 @@
+import type { Page } from '@app/types';
+
 export enum LocalKeys {
   PLAYER_PAUSED = 'PLAYER_PAUSED',
   PLAYER_VOLUME = 'PLAYER_VOLUME',
