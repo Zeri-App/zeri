@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^3.59.1
     version: 3.59.1
   svelte-check:
-    specifier: ^3.4.4
-    version: 3.4.4(postcss@8.4.24)(svelte@3.59.1)
+    specifier: ^3.4.6
+    version: 3.4.6(postcss@8.4.24)(svelte@3.59.1)
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -471,7 +471,7 @@ packages:
       debug: 4.3.4
       deepmerge: 4.3.1
       kleur: 4.1.5
-      magic-string: 0.30.0
+      magic-string: 0.30.1
       svelte: 3.59.1
       svelte-hmr: 0.15.2(svelte@3.59.1)
       vite: 4.3.9(@types/node@20.3.1)
@@ -2245,8 +2245,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@3.4.4(postcss@8.4.24)(svelte@3.59.1):
-    resolution: {integrity: sha512-Uys9+R65cj8TmP8f5UpS7B2xKpNLYNxEWJsA5ZoKcWq/uwvABFF7xS6iPQGLoa7hxz0DS6xU60YFpmq06E4JxA==}
+  /svelte-check@3.4.6(postcss@8.4.24)(svelte@3.59.1):
+    resolution: {integrity: sha512-OBlY8866Zh1zHQTkBMPS6psPi7o2umTUyj6JWm4SacnIHXpWFm658pG32m3dKvKFL49V4ntAkfFHKo4ztH07og==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0
