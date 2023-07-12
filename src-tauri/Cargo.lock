@@ -741,7 +741,7 @@ checksum = "1a5c6c585bc94aaf2c7b51dd4c2ba22680844aba4c687be581871a6f518c5742"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.18",
+ "syn 2.0.25",
 ]
 
 [[package]]
@@ -2740,7 +2740,7 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-store"
 version = "0.0.0"
-source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#a305ad3ddbdf4b7c009394ac3dc4794cfc222f0f"
+source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#c009cb383f3758b2f6889e601ce5c97e331fae89"
 dependencies = [
  "log",
  "serde",
@@ -2752,7 +2752,7 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-window-state"
 version = "0.1.0"
-source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#a305ad3ddbdf4b7c009394ac3dc4794cfc222f0f"
+source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#c009cb383f3758b2f6889e601ce5c97e331fae89"
 dependencies = [
  "bincode",
  "bitflags 2.3.1",
