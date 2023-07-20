@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^8.8.0
     version: 8.8.0(eslint@8.43.0)
   eslint-plugin-svelte:
-    specifier: ^2.32.0
-    version: 2.32.0(eslint@8.43.0)(svelte@3.59.1)
+    specifier: ^2.32.3
+    version: 2.32.3(eslint@8.43.0)(svelte@3.59.1)
   postcss:
     specifier: ^8.4.24
     version: 8.4.24
@@ -832,12 +832,12 @@ packages:
       pretty-format: 29.6.1
     dev: true
 
-  /acorn-jsx@5.3.2(acorn@8.8.2):
+  /acorn-jsx@5.3.2(acorn@8.10.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.8.2
+      acorn: 8.10.0
     dev: true
 
   /acorn-walk@8.2.0:
@@ -847,12 +847,6 @@ packages:
 
   /acorn@8.10.0:
     resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: true
-
-  /acorn@8.8.2:
-    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -1198,8 +1192,8 @@ packages:
       eslint: 8.43.0
     dev: true
 
-  /eslint-plugin-svelte@2.32.0(eslint@8.43.0)(svelte@3.59.1):
-    resolution: {integrity: sha512-q8uxR4wFmAkb+RX2qIJIO+xAjecInZuGYXbXOvpxMwv7Y5oQrq5WOkiYwLqPZk6p1L5UmSr54duloKiBucDL7A==}
+  /eslint-plugin-svelte@2.32.3(eslint@8.43.0)(svelte@3.59.1):
+    resolution: {integrity: sha512-aps5wNCOxeEGyplHMvcxI9rcf0GSTWGrqC0hTjgtlNdEehUIDAcAoP4bSaXdWCF6a0pVXCcrOq/bzquM4E/Slw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -1214,13 +1208,13 @@ packages:
       eslint: 8.43.0
       esutils: 2.0.3
       known-css-properties: 0.27.0
-      postcss: 8.4.24
-      postcss-load-config: 3.1.4(postcss@8.4.24)
-      postcss-safe-parser: 6.0.0(postcss@8.4.24)
+      postcss: 8.4.25
+      postcss-load-config: 3.1.4(postcss@8.4.25)
+      postcss-safe-parser: 6.0.0(postcss@8.4.25)
       postcss-selector-parser: 6.0.13
       semver: 7.5.3
       svelte: 3.59.1
-      svelte-eslint-parser: 0.32.0(svelte@3.59.1)
+      svelte-eslint-parser: 0.32.2(svelte@3.59.1)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1303,8 +1297,8 @@ packages:
     resolution: {integrity: sha512-7OASN1Wma5fum5SrNhFMAMJxOUAbhyfQ8dQ//PJaJbNw0URTPWqIghHWt1MmAANKhHZIYOHruW4Kw4ruUWOdGw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.10.0
+      acorn-jsx: 5.3.2(acorn@8.10.0)
       eslint-visitor-keys: 3.4.1
     dev: true
 
@@ -1915,7 +1909,7 @@ packages:
       postcss: 8.4.24
     dev: true
 
-  /postcss-load-config@3.1.4(postcss@8.4.24):
+  /postcss-load-config@3.1.4(postcss@8.4.25):
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -1928,7 +1922,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.24
+      postcss: 8.4.25
       yaml: 1.10.2
     dev: true
 
@@ -1959,13 +1953,13 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.24):
+  /postcss-safe-parser@6.0.0(postcss@8.4.25):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.24
+      postcss: 8.4.25
     dev: true
 
   /postcss-scss@4.0.6(postcss@8.4.25):
@@ -2274,8 +2268,8 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-eslint-parser@0.32.0(svelte@3.59.1):
-    resolution: {integrity: sha512-Q8Nh3GHHoWZMv3Ej4zw+3+gyWPR8I5pPTJXEOvW+JOgwhGXqGKh7mOKNlVcEPtk+PCGiK9TPaRtvRkKoJR327A==}
+  /svelte-eslint-parser@0.32.2(svelte@3.59.1):
+    resolution: {integrity: sha512-Ok9D3A4b23iLQsONrjqtXtYDu5ZZ/826Blaw2LeFZVTg1pwofKDG4mz3/GYTax8fQ0plRGHI6j+d9VQYy5Lo/A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       svelte: ^3.37.0 || ^4.0.0
