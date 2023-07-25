@@ -2740,7 +2740,7 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-store"
 version = "0.0.0"
-source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#c009cb383f3758b2f6889e601ce5c97e331fae89"
+source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#92514cca47bdc361257b623f6369ecf826e3ef4f"
 dependencies = [
  "log",
  "serde",
@@ -2752,7 +2752,7 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-window-state"
 version = "0.1.0"
-source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#c009cb383f3758b2f6889e601ce5c97e331fae89"
+source = "git+https://github.com/tauri-apps/plugins-workspace?branch=v1#92514cca47bdc361257b623f6369ecf826e3ef4f"
 dependencies = [
  "bincode",
  "bitflags 2.3.1",
