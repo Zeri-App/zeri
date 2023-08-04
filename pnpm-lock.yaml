@@ -12,11 +12,11 @@ dependencies:
     specifier: ^3.2.4
     version: 3.2.4
   overlayscrollbars:
-    specifier: ^2.2.0
-    version: 2.2.0
+    specifier: ^2.2.1
+    version: 2.2.1
   overlayscrollbars-svelte:
     specifier: ^0.4.0
-    version: 0.4.0(overlayscrollbars@2.2.0)(svelte@3.59.1)
+    version: 0.4.0(overlayscrollbars@2.2.1)(svelte@3.59.1)
 
 devDependencies:
   '@sveltejs/adapter-static':
@@ -1816,18 +1816,18 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /overlayscrollbars-svelte@0.4.0(overlayscrollbars@2.2.0)(svelte@3.59.1):
+  /overlayscrollbars-svelte@0.4.0(overlayscrollbars@2.2.1)(svelte@3.59.1):
     resolution: {integrity: sha512-5liVtMb0WgHu2ngICYS2c5ihEVQ/6rSFCDuymamTO6fS8M1pgfPeUyaQp9dTms+p+yuQmjdNmplR5dGgzgFhkw==}
     peerDependencies:
       overlayscrollbars: ^2.0.0
       svelte: ^3.44.0
     dependencies:
-      overlayscrollbars: 2.2.0
+      overlayscrollbars: 2.2.1
       svelte: 3.59.1
     dev: false
 
-  /overlayscrollbars@2.2.0:
-    resolution: {integrity: sha512-Sx7gI2TEx+TFvFXJq4BUYM5R4bfWQR2ertdxyzAQ589ouPKKifMBU0/opdCb1bUC7x6sMiSNI1u9ngC0RbMnBg==}
+  /overlayscrollbars@2.2.1:
+    resolution: {integrity: sha512-5oMxq4UCiEVLiOSvovbX8p+P2NtPosjHC0KkIcaobnYuxGwMyTOwBCtBdqO1tXrrA02VVrNzuIjGMLisO2mIwg==}
     dev: false
 
   /p-limit@3.1.0:

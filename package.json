@@ -20,7 +20,7 @@
   "dependencies": {
     "@tauri-apps/api": "^1.4.0",
     "dexie": "^3.2.4",
-    "overlayscrollbars": "^2.2.0",
+    "overlayscrollbars": "^2.2.1",
     "overlayscrollbars-svelte": "^0.4.0"
   },
   "devDependencies": {
