@@ -21,10 +21,10 @@ dependencies:
 devDependencies:
   '@sveltejs/adapter-static':
     specifier: 2.0.2
-    version: 2.0.2(@sveltejs/kit@1.22.3)
+    version: 2.0.2(@sveltejs/kit@1.22.4)
   '@sveltejs/kit':
-    specifier: ^1.22.3
-    version: 1.22.3(svelte@3.59.1)(vite@4.4.9)
+    specifier: ^1.22.4
+    version: 1.22.4(svelte@3.59.1)(vite@4.4.9)
   '@tauri-apps/cli':
     specifier: ^1.4.0
     version: 1.4.0
@@ -414,16 +414,16 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.3):
+  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.4):
     resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.3(svelte@3.59.1)(vite@4.4.9)
+      '@sveltejs/kit': 1.22.4(svelte@3.59.1)(vite@4.4.9)
     dev: true
 
-  /@sveltejs/kit@1.22.3(svelte@3.59.1)(vite@4.4.9):
-    resolution: {integrity: sha512-IpHD5wvuoOIHYaHQUBJ1zERD2Iz+fB/rBXhXjl8InKw6X4VKE9BSus+ttHhE7Ke+Ie9ecfilzX8BnWE3FeQyng==}
+  /@sveltejs/kit@1.22.4(svelte@3.59.1)(vite@4.4.9):
+    resolution: {integrity: sha512-Opkqw1QXk4Cc25b/heJP2D7mX+OUBFAq4MXKfET58svTTxdeiHFKzmnuRsSF3nmxESqrLjqPAgHpib+knNGzRw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
