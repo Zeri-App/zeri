@@ -24,7 +24,7 @@
     "overlayscrollbars-svelte": "^0.4.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "2.0.2",
+    "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "^1.22.6",
     "@tauri-apps/cli": "^1.4.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
